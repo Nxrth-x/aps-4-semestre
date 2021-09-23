@@ -8,11 +8,11 @@ public class App {
   public static void main(String[] args) {
     var benchmarks = new ArrayList<IBenchmarkable>();
 
-    var bubbleSortBenchmark = Benchmarker.getBenchmark(new BubbleSort());
-    var quickSortBenchMark = Benchmarker.getBenchmark(new QuickSort());
+    var bubbleSort = Benchmarker.getBenchmark(new BubbleSort());
+    var quickSort = Benchmarker.getBenchmark(new QuickSort());
 
-    benchmarks.add(bubbleSortBenchmark);
-    benchmarks.add(quickSortBenchMark);
+    benchmarks.add(bubbleSort);
+    benchmarks.add(quickSort);
 
     Benchmarker.execute(benchmarks, 10000);
   }
